@@ -1,0 +1,164 @@
+        @font-face {
+            font-family: 'Lexend Deca';
+            src: url(assets/fonts/lexend-deca/LexendDeca-VariableFont_wght.ttf);
+        }
+        @font-face {
+            font-family: 'Inter';
+            src: url(assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf);
+        }
+        body{
+            background-color: hsl(233, 47%, 7%);
+            box-sizing: border-box;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .container{
+            background-color: hsl(244, 37%, 16%);
+            margin: auto;
+            width: min(65rem, 85%);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .con-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: hsl(277, 64%, 61%);
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .con-img img{
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+        }
+        
+        .con-body{
+            padding: 1.5rem;
+            text-align: center;
+        }
+        h1{
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+        span{
+            color: hsl(277, 64%, 61%);
+        }
+        .content{
+            color: hsla(0, 0%, 100%, 0.75);
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 200;
+        }
+        .con h4{
+            font-family: 'Inter', sans-serif;
+            color: hsl(0, 0%, 100%);
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .con p{
+            font-family: 'Lexend Deca', sans-serif;
+            margin-top: 0;
+            color: hsla(0, 0%, 100%, 0.75);
+            font-size: 0.8rem;
+            font-weight: 200;
+        }
+        #img{
+            display: none;
+        }
+        @media (min-width:768px) and (max-width:1023px) {
+            .container{
+                margin-top: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .con-img{
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 8px;
+            }
+            #img1{
+                display: none;
+            }
+            #img{
+                display: flex;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 8px;
+            }
+            .con-body{
+                text-align: left;
+                padding-left: 3rem;
+                padding-right: 3rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            h1{
+                font-size: 1.3rem;
+            }
+            .content{
+                font-size: 0.8rem;
+                margin-bottom: 10%;
+            }
+            .con{
+                display: flex;
+                gap: 8%;
+            }
+            .con h4{
+                font-size: 1.2rem;
+            }
+            .com p{
+                font-size: 0.5rem;
+            }
+        }
+        @media screen and (min-width:1024px) {
+            .container{
+                margin-top: auto;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .con-img{
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 8px;
+            }
+            #img1{
+                display: none;
+            }
+            #img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                background-color: hsl(277, 64%, 61%, 0.4);
+                border-top-left-radius: 0px;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 8px;
+            }
+            #img img{
+                width: 100%;
+                height: 100%;
+            }
+            .con-body{
+                text-align: left;
+                padding-left: 4rem;
+                padding-right: 4rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            h1{
+                font-size: 2.1rem;
+            }
+            .content{
+                font-size: 1rem;
+                margin-bottom: 40;
+            }
+            .con{
+                display: flex;
+                gap: 18%;
+            }
+        }
